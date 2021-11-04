@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!--Main CSS-->
+  <link rel="stylesheet" href="./style.css">
+  <title>Pokedex</title>
+</head>
+
+<body>
+  <div class="search-bar">
+    <nav class="navbar search-bar">
+      <div class="container-fluid">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" id="inputSearch" placeholder="Search" aria-label="Search">
+          <input class="search-btn btn btn-outline-warning" id="btnSearch" type="button" value="Search">
+        </form>
+      </div>
+    </nav>
+  </div>
+  <div class="pokemon-card flex-container">
+    <div class="card" style="width: 18rem;">
+      <img src="/imagenes/chems.png" class="img-pokemon card-img-top" id="imgPokemon" alt="pokemon">
+      <div class="card-body">
+        <h5 class="card-title" id="pokemonName">Pokemon Name</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li id="hp" class="list-element list-group-item"><b>HP</b></li>
+        <li id="attack" class="list-element list-group-item"><b>Attack</b></li>
+        <li id="deffense" class="list-element list-group-item"><b>Deffense</b></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
+
+</html>
