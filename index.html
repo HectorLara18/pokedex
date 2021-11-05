@@ -21,15 +21,15 @@
   <div class="search-bar">
     <nav class="navbar search-bar">
       <div class="container-fluid">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" id="inputSearch" placeholder="Search" aria-label="Search">
+        <div class="d-flex">
+          <input class="form-control me-2" type="text" id="inputSearch" placeholder="Search" >
           <input class="search-btn btn btn-outline-warning" id="btnSearch" type="button" value="Search">
-        </form>
+        </div>
       </div>
     </nav>
   </div>
   <div class="pokemon-card flex-container">
-    <div class="card" style="width: 18rem;">
+    <div id="pokemonCard" class="card" style="width: 18rem;">
       <img src="/imagenes/chems.png" class="img-pokemon card-img-top" id="imgPokemon" alt="pokemon">
       <div class="card-body">
         <h5 class="card-title" id="pokemonName">Pokemon Name</h5>
