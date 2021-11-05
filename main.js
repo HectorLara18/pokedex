@@ -85,6 +85,8 @@ function renderDataFail(err) {
     document.getElementById("attack").innerHTML = `<b>Attack: </b> 9999`
     document.getElementById("deffense").innerHTML = `<b>Deffense: </b> 9999`
     document.getElementById("imgPokemon").src = "/imagenes/notFound.jpg";
+    document.getElementById("pokemonCard").style.background = `#555`;
+    document.getElementById("pokemonCard").style.backgroundSize = '5px 5px'
 
     console.log(err)
 }
@@ -102,5 +104,7 @@ inputSearch.addEventListener("keyup", (event) => {
         fetchPokemonData(inputSearch.toLowerCase())
             .then(dataOutput => renderData(dataOutput))
             .catch(err => renderDataFail(err))
+        
+        document.getElementById("inputSearch").value = ""
     }
 },true)
