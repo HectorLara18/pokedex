@@ -57,7 +57,10 @@ function renderData(data) {
     const types = renderPokemonType(data);
     const colorOne = pokemonColors[types[0]]
     const colorTwo = types[1] ? pokemonColors[types[1]] : pokemonColors.default;
-    document.getElementById("pokemonName").innerHTML = `<b>Name: </b> ${data.name}`
+    const pokemonName = data.name;
+    const fisrtLeterCapital = pokemonName[0].toUpperCase()
+    const pokemonNameCapital = fisrtLeterCapital + pokemonName.substring(1)
+    document.getElementById("pokemonName").innerHTML = `<b>Name: </b> ${pokemonNameCapital}`
     document.getElementById("pokeType").innerHTML = `<b>type</b> ${renderPokemonType(data)}`
     document.getElementById("pokemonId").innerHTML = `<b>#id</b> ${data.id}`
     document.getElementById("hp").innerHTML = `<b>HP: </b> ${data.stats[0].base_stat}`
@@ -67,7 +70,7 @@ function renderData(data) {
     document.getElementById("pokemonCard").style.background = `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
     document.getElementById("pokemonCard").style.backgroundSize = '5px 5px'
 
-    console.log(colorOne, colorTwo)
+    console.log(pokemonNameCapital)
 }
 
 function renderPokemonType(data) {
