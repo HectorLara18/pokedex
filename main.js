@@ -59,6 +59,7 @@ function renderData(data) {
     const colorTwo = types[1] ? pokemonColors[types[1]] : pokemonColors.default;
     document.getElementById("pokemonName").innerHTML = `<b>Name: </b> ${data.name}`
     document.getElementById("pokeType").innerHTML = `<b>type</b> ${renderPokemonType(data)}`
+    document.getElementById("pokemonId").innerHTML = `<b>#id</b> ${data.id}`
     document.getElementById("hp").innerHTML = `<b>HP: </b> ${data.stats[0].base_stat}`
     document.getElementById("attack").innerHTML = `<b>Attack: </b> ${data.stats[1].base_stat}`
     document.getElementById("deffense").innerHTML = `<b>Deffense: </b> ${data.stats[2].base_stat}`
